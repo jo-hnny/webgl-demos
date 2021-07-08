@@ -13,7 +13,7 @@ class ImageAdjust {
     this.init(canvas);
   }
 
-  setImage(image: HTMLImageElement) {
+  set image(image: HTMLImageElement) {
     this.initCanvas(image);
 
     this.draw(image);
@@ -50,6 +50,8 @@ class ImageAdjust {
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
   }
+
+  registerFilter(fragSource: string) {}
 
   initCanvas(image: HTMLImageElement) {
     const canvas = this.gl.canvas as HTMLCanvasElement;
@@ -115,7 +117,7 @@ function main() {
 
   const img = new Image();
   img.onload = function () {
-    adjustImage.setImage(img);
+    adjustImage.image = img;
   };
   img.src = imageUrl;
 }
