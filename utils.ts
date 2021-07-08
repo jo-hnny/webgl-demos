@@ -11,7 +11,10 @@ export function createShader(
 
   if (isOk) return shader;
 
-  console.log("createShader failed:", gl.getShaderInfoLog(shader));
+  console.log(
+    `create ${type === gl.VERTEX_SHADER ? "vert" : "frag"} Shader failed:`,
+    gl.getShaderInfoLog(shader)
+  );
   gl.deleteShader(shader);
 }
 
