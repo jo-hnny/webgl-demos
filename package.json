@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel demos/point/index.html"
   },
   "keywords": [],
   "author": "",
