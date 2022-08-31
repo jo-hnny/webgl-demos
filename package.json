@@ -15,5 +15,11 @@
     "less": "^4.1.1",
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "@ngneat/falso": "^6.0.3",
+    "@pixi/events": "^6.5.1",
+    "lodash": "^4.17.21",
+    "pixi.js": "^6.5.2"
   }
 }

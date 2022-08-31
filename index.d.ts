@@ -16,3 +16,5 @@ declare module "*.PNG";
 declare module "*.JPG";
 
 declare module "*.jpeg";
+
+declare module "*.svg";
