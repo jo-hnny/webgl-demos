@@ -7,7 +7,7 @@ import _ from "lodash";
 
 // PIXI.extensions.remove(PIXI.InteractionManager);
 
-const MaxItem = 10000 * 100;
+const MaxItem = 10000 * 10;
 
 let itemSize = 50;
 
