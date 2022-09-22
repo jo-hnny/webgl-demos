@@ -1,11 +1,9 @@
 import * as PIXI from "pixi.js";
-import img from "./1-hov.svg";
+import img from "./ciecle.svg";
 
 const WIDTH = window.innerWidth;
 const HEIGHT = window.innerHeight;
-const MAX = 1000 * 10;
-
-console.log(WIDTH, HEIGHT);
+const MAX = 500;
 
 const app = new PIXI.Application({
   width: WIDTH,

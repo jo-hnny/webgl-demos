@@ -2,7 +2,7 @@ function randomColor() {
   return `hsl(${Math.random() * 360}, 100%, 50%)`;
 }
 
-const MAX = 50000;
+const MAX = 500;
 
 function main() {
   const canvas = document.querySelector("canvas") as HTMLCanvasElement;
